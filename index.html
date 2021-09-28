@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Full Screen Video Player</title>
+    <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/@videojs/themes@1/dist/city/index.css"
+      rel="stylesheet"
+    />
+
+    <style>
+     #my-video {
+       position: fixed;
+       right: 0;
+       bottom: 0;
+       min-width: 100%;
+       min-height: 100%;
+       width: auto;
+       height: auto;
+       z-index: -100;
+       /* background: url('D:\Charicha Gaming\Fifa\thumbnail.jpg') no-repeat; */
+       background-size: cover;
+     }
+    </style>
+
+  </head>
+  <body>
+
+    <body>
+      <video
+	id="my-video"
+	class="video-js vjs-theme-city"
+	controls
+	preload="auto"
+	width="640"
+	height="264"
+	data-setup="{}"
+      >
+	<source src="D:\Charicha Gaming\Fifa\S3 Intro\Raw Videos\fifa\MVI_2759.mp4" type="video/mp4" />
+	<source src="MY_VIDEO.webm" type="video/webm" />
+	<p class="vjs-no-js">
+	  To view this video please enable JavaScript, and consider upgrading to a
+	  web browser that
+	  <a href="https://videojs.com/html5-video-support/" target="_blank"
+          >supports HTML5 video</a
+			       >
+	</p>
+      </video>
+
+      <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
+      <script>
+       var videoElement = document.getElementById("my-video");
+      </script>
+
+    </body>
+</html>
